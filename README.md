@@ -16,6 +16,18 @@ Skills
 9. Deis
 10. Docker
 
+Git Repositories:
+Cassandra: https://github.com/wardviaene/digitalocean-vagrant-cassandra-multi-node
+Devops Box: https://github.com/wardviaene/devops-box
+Terraform Demo: https://github.com/wardviaene/terraform-demo
+Docker PHP7: https://github.com/wardviaene/docker-php7
+Eb-php-example: https://github.com/wardviaene/eb-php-example
+Eb-php7-docker-example: https://github.com/wardviaene/eb-php7-docker-example
+Dokku demo: https://github.com/wardviaene/dokku-demo
+Deis demo: https://github.com/wardviaene/deis-demo
+
+![alt text](https://github.com/smalltide/docker-mastery/blob/master/img/intro.png "intro")
+
 ```
   >
   >
