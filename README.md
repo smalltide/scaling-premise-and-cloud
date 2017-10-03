@@ -35,3 +35,5 @@ Introduction and How to scale
 ```
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/scalable1.png "scalable1")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/scalable2.png "scalable2")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db1.png "db1")![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db2.png "db2")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/IaaS-PaaS.png "IaaS-PaaS")
