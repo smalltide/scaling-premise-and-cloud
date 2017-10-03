@@ -3,6 +3,7 @@ Get experienced with Vagrant, DigitalOcean, Cassandra, AWS, Elastic Beanstalk, T
 
 Learn DevOps: Scaling apps On-Premises and in the Cloud  
 https://www.udemy.com/learn-devops-scaling-apps-on-premise-and-in-the-cloud
+https://12factor.net/zh_cn/
 
 Skills
 1. Vagrant
@@ -28,7 +29,9 @@ Deis demo: https://github.com/wardviaene/deis-demo
 
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/intro.png "intro")
 
+Introduction and How to scale
 ```
-  >
-  >
+  > https://12factor.net/zh_cn/
 ```
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/scalable1.png "scalable1")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/scalable2.png "scalable2")
