@@ -37,3 +37,23 @@ Introduction and How to scale
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/scalable2.png "scalable2")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db1.png "db1")![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db2.png "db2")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/IaaS-PaaS.png "IaaS-PaaS")
+
+Vagrant-Cassandra-DigitalOcean (On-Premise)  
+Launching Cassandra with Vagrant on DigitalOcean
+```
+  > https://www.vagrantup.com/downloads.html
+  > vagrant plugin install vagrant-digitalocean
+  >
+  > cd digitalocean-vagrant-cassandra-multi-node
+  > ssh-keygen -f id_rsa
+  > vagrant up
+  > vagrant ssh node1
+  > /opt/apache-cassandra-3.0.14/bin/nodetool status
+  > tail -n100 /opt/apache-cassandra-3.0.14/logs/system.log
+  > /opt/apache-cassandra-3.0.14/bin/cqlsh
+  > /opt/apache-cassandra-3.0.14/bin/nodetool getendpoints test1 customers 1
+  > /opt/apache-cassandra-3.0.14/bin/cqlsh
+```
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/cqlsh.png "cqlsh")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/cqlsh2.png "cqlsh2")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/distribute-system.png "distribute-system")
