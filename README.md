@@ -38,7 +38,8 @@ Introduction and How to scale
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db1.png "db1")![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/db2.png "db2")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/IaaS-PaaS.png "IaaS-PaaS")
 
-Vagrant-Cassandra-DigitalOcean (On-Premise)  
+## Vagrant-Cassandra-DigitalOcean (On-Premise)  
+
 Launching Cassandra with Vagrant on DigitalOcean
 ```
   > https://www.vagrantup.com/downloads.html
@@ -57,3 +58,28 @@ Launching Cassandra with Vagrant on DigitalOcean
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/cqlsh.png "cqlsh")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/cqlsh2.png "cqlsh2")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/distribute-system.png "distribute-system")
+
+## Amazon AWS with Elastic Beanstalk and Terraform  
+
+Amazon AWS Virtual Private Networks (VPCs)
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/vpc1.png "vpc1")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/vpc2.png "vpc2")
+
+Create AWS VPC with Terraform
+```
+  > https://aws.amazon.com/tw/free
+  > create aws group and user on aws console
+  > cd devops-box
+  > vagrant up (build a vm install Terraform and Ansible and AWS CLI)
+  > vagrant ssh devops-box
+  > git clone https://github.com/wardviaene/terraform-demo (on devops-box vm)
+  > git checkout vpc-demo
+  > input AWS_ACCESS_KEY in terraform.tfvars
+  > terraform plan
+  > terraform apply (see creating vpc on aws)
+```
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf5.png "tf5")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf1.png "tf1")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf2.png "tf2")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf3.png "tf3")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf4.png "tf4")
