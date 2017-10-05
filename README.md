@@ -4,6 +4,7 @@ Get experienced with Vagrant, DigitalOcean, Cassandra, AWS, Elastic Beanstalk, T
 Learn DevOps: Scaling apps On-Premises and in the Cloud  
 https://www.udemy.com/learn-devops-scaling-apps-on-premise-and-in-the-cloud
 https://12factor.net/zh_cn/
+http://www.devopschallenge.co
 
 Skills
 1. Vagrant
@@ -73,6 +74,7 @@ Create AWS VPC with Terraform
   > vagrant up (build a vm install Terraform and Ansible and AWS CLI)
   > vagrant ssh devops-box
   > git clone https://github.com/wardviaene/terraform-demo (on devops-box vm)
+  > cd terraform-demo
   > git checkout vpc-demo
   > input AWS_ACCESS_KEY in terraform.tfvars
   > terraform plan
@@ -83,3 +85,36 @@ Create AWS VPC with Terraform
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf2.png "tf2")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf3.png "tf3")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/tf4.png "tf4")
+
+ Setting up the Database and Application Layer
+ ```
+   > cd devops-box
+   > vagrant ssh devops-box
+   > cd terraform-demo
+   > git checkout master
+   > terraform plan
+   > terraform apply
+   > terraform destroy
+ ```
+
+ ## Dokku & Deis on Kubernetes
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/dokku.png "dokku")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/dokku2.png "dokku2")
+
+Dokku with MongoDB on Digital Ocean using Terraform
+```
+  > cd dokku-demo
+  > terraform plan
+  > terraform apply
+  > cd app
+  > git init
+  > git remote add dokku dokku@<DO_IP>:dokku-demo
+  > git add .
+  > git commit -m "app"
+  > ssh-agent bash
+  > ssh-add ~/.ssh/mykey
+  > git push dokku master
+  > ssh dokku@<DO_IP> config:set dokku-demo DOKKU_NGINX_PORT=80
+  > http://<DO_IP>:27388/hit
+  > terraform destroy
+```
