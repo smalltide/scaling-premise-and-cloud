@@ -119,14 +119,44 @@ Dokku with MongoDB on Digital Ocean using Terraform
   > http://<DO_IP>:27388/hit
   > terraform destroy
 ```
+
+Create php7 repository in ECR
+```
+  > Docker PHP7: https://github.com/wardviaene/docker-php7 
+  > sudo pip install awscli
+  > aws ecr get-login --region eu-west-1
+  > docker build -t php7 .
+  > docker tag php7:latest AMAZONUSERID.dkr.ecr.eu-west-1.amazonaws.com/php7:latest
+  > docker push AMAZONUSERID.dkr.ecr.eu-west-1.amazonaws.com/php7:latest
+```
 Deis on Kubernetes on Digital Ocean using Terraform
 ```
-  >
-  >
-  >
-  >
-  >
-  >
+  > cd deis-demo
+  > cd terraform
+  > terraform plan (input DO api token in terraform.tfvars first)
+  > terraform apply
+  > cd ansible
+  > ansible-playbook kubernetes.yml -i inventory
+  > scripts/kubectl.sh
+  > kubectl get nodes
+  > scripts/install_deis.sh
+  > kubectl --namespace=deis get pods
+  > scripts/install_client.sh
+  > kubectl describe service deis-router --namespace=deis
+  > edit group_vars/all
+  > edit inventory file
+  > ansible-playbook kubernetes.yml -i inventory --limit loadbalancer-ip
+  > deis register http://deis.public-ip.nip.io
+  > mv demo-app ../app && cd ../app
+  > git init
+  > git add .
+  > git commit -am "initial commit"
+  > deis create
+  > deis keys:add
+  > ssh-agent bash
+  > ssh-add ~/.ssh/mykey
+  > git push deis master
+  > curl appname.public-ip.nip.io
 ```
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis1.png "deis1")
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis2.png "deis2")
