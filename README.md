@@ -99,6 +99,7 @@ Create AWS VPC with Terraform
 
  ## Dokku & Deis on Kubernetes
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/dokku.png "dokku")
+deis1
 ![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/dokku2.png "dokku2")
 
 Dokku with MongoDB on Digital Ocean using Terraform
@@ -118,3 +119,20 @@ Dokku with MongoDB on Digital Ocean using Terraform
   > http://<DO_IP>:27388/hit
   > terraform destroy
 ```
+Deis on Kubernetes on Digital Ocean using Terraform
+```
+  >
+  >
+  >
+  >
+  >
+  >
+```
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis1.png "deis1")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis2.png "deis2")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis3.png "deis3")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/deis4.png "deis4")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/k8s.png "k8s")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/etcd.png "etcd")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/flannel1.png "flannel1")
+![alt text](https://github.com/smalltide/scaling-premise-and-cloud/blob/master/img/flannel2.png "flannel2")
